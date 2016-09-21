@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TrapCall Copy/Paste Button Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <br><br>
+    <div class="code code-1">
+        <!-- states: none, 'copy-success', 'copy-help', 'copy-after' -->
+        <i class="show-after">Can’t copy? <a class="code-try-again-copy" data-clipboard-target="#setup-code-1">Try again</a></i>
+        <input value="**004*19852311009#" id="setup-code-1" readonly="">
+        <button class="code-button-copy" data-clipboard-target="#setup-code-1">Copy Code</button>
+        <i class="show-success"><img src="img/copy-icon-success.png" width="17" alt="Copied successfully!"><b>Copied!</b> Now go to next step</i>
+        <i class="show-help">Tap <b>‘Copy’</b> above and go to next step</i>
+    </div>
+
+    <br><br>
+    <a href="#" onclick="location.reload();" style="display: block;
+    text-align: center;">Reload</a>
+
+    <script src="js/vendor/jquery-3.1.0.min.js"></script>
+    <script src="js/vendor/clipboard.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
